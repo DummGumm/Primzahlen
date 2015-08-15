@@ -17,9 +17,16 @@ namespace Primzahlen
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        public static Byte[] zahlBerreich;//Null heißt noch nicht überprüft. //Eins ist keine Primzahl //Zwei ist eine Primzahl.
+        public static int niedrigsteGetesteteZahl = 2; //Der Niedrigstestand des Siebes
+        public int[] test;
+        private void btn_errechnen_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hi");
+
+            zahlBerreich = new Byte[(int)numUD_maximum.Value];
+
         }
+
     }
 }
